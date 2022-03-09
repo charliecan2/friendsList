@@ -13,10 +13,10 @@
     <p class="col-md-8 fs-4 lead">
       Twitter: <%= @friend.twitter %>
     </p>
-    <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-secondary" %>
-    <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
+    <%= link_to "Edit Friend", edit_friend_path(@friend), class: "btn btn-secondary" %>
+    <%= link_to "Back", friends_path, class: "btn btn-dark" %>
     <div class="mt-2">
-      <%= button_to "Destroy this friend", @friend, method: :delete, class: "btn btn-dark" %>
+      <%= button_to "Delete Friend", @friend, method: :delete, class: "btn btn-danger" %>
     </div>
   </div>
 </div>
